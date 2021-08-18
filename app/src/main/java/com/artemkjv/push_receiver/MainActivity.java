@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         AppContextKeeper.appContext = this;
         PushRegistratorFCM pushRegistratorFCM = new PushRegistratorFCM();
+        // senderId приложение должно получать по api с нашего сервера
         pushRegistratorFCM.registerForPush(AppContextKeeper.appContext, "92348455022", new PushRegistrator.RegisteredHandler() {
             @Override
             public void complete(String id, int status) {

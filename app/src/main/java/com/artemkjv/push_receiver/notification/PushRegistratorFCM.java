@@ -19,11 +19,10 @@ import java.util.concurrent.ExecutionException;
 
 public class PushRegistratorFCM extends PushRegistratorAbstractGoogle {
 
-   // project_info.project_id
    private static final String FCM_DEFAULT_PROJECT_ID = "push-test-19590";
-   // client.client_info.mobilesdk_app_id
+
    private static final String FCM_DEFAULT_APP_ID = "1:910789166102:android:6b88b8bc65db02e29b6137";
-   // client.api_key.current_key
+
    private static final String FCM_DEFAULT_API_KEY_BASE64 = "QUl6YVN5QzlwLVJ1WFhzMEdBX2l1eWNNakYwcTlFcXgxYXVHbnY0";
 
    private static final String FCM_APP_NAME = "Push";
