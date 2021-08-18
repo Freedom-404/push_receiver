@@ -99,7 +99,7 @@ public class PushRegistratorFCM extends PushRegistratorAbstractGoogle {
             .setApiKey(getApiKey(/*remoteParams*/))
             .setProjectId(getProjectId(/*remoteParams*/))
             .build();
-      firebaseApp = FirebaseApp.initializeApp(AppContextKeeper.appContext, firebaseOptions, FCM_APP_NAME);
+      firebaseApp = FirebaseApp.initializeApp(AppContextKeeper.appContext, firebaseOptions);
    }
 
    private static @NonNull String getAppId(/*OneSignalRemoteParams.Params remoteParams*/) {

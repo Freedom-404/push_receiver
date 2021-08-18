@@ -6,6 +6,7 @@ import android.os.Bundle;
 import com.artemkjv.push_receiver.notification.AppContextKeeper;
 import com.artemkjv.push_receiver.notification.PushRegistrator;
 import com.artemkjv.push_receiver.notification.PushRegistratorFCM;
+import com.google.firebase.FirebaseApp;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,9 +20,10 @@ public class MainActivity extends AppCompatActivity {
         pushRegistratorFCM.registerForPush(AppContextKeeper.appContext, "92348455022", new PushRegistrator.RegisteredHandler() {
             @Override
             public void complete(String id, int status) {
-                Log.e("Log", id);
+                Log.e("instance_id", id);
             }
         });
+//        FirebaseApp.getInstance()
     }
 
 }
